@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: nginx:latest
+    container_name: app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./path/to/your/index.html:/usr/share/nginx/html/index.html
+
